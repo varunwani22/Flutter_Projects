@@ -19,15 +19,15 @@ class CategorymealsScreen extends StatefulWidget {
 }
 
 class _CategorymealsScreenState extends State<CategorymealsScreen> {
-  late String categoryTitle;
-  late List<Meal> displayMeals;
+  String categoryTitle;
+  List<Meal> displayMeals;
   var _loadedInitData = false;
 
   @override
   void didChangeDependencies() {
     if (!_loadedInitData) {
       final routeArgs =
-          ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+          ModalRoute.of(context).settings.arguments as Map<String, String>;
       categoryTitle = routeArgs['title'].toString();
       final categoryId = routeArgs['id'];
       displayMeals = widget.availableMeals.where((meals) {

@@ -8,8 +8,17 @@ class FavoriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (favoriteMeals.isEmpty) {
-      return Center(
-        child: Text('No favorite addded!'),
+      return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image(
+            image: NetworkImage(
+              'https://image.shutterstock.com/image-vector/cartoon-stick-drawing-illustration-enthusiastic-260nw-1111747733.jpg',
+            ),
+          ),
+          SizedBox(),
+          Text('No favorite addded!'),
+        ],
       );
     } else {
       return ListView.builder(

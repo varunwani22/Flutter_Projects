@@ -7,7 +7,7 @@ class MealDetailsScreen extends StatelessWidget {
   final Function toggleFavorite;
   final Function isFavorite;
 
-  MealDetailsScreen(this.toggleFavorite, this.isFavorite);
+  MealDetailsScreen({this.toggleFavorite, this.isFavorite});
 
   Widget sectionTitle(String title, BuildContext context) {
     return Container(
@@ -16,7 +16,7 @@ class MealDetailsScreen extends StatelessWidget {
       ),
       child: Text(
         title,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }
@@ -38,7 +38,7 @@ class MealDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mealId = ModalRoute.of(context)!.settings.arguments as String;
+    final mealId = ModalRoute.of(context).settings.arguments as String;
     final selectedmeals = DUMMY_MEALS.firstWhere((meal) => meal.id == mealId);
     return Scaffold(
       appBar: AppBar(

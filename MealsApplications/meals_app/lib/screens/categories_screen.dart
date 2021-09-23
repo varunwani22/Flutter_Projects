@@ -7,17 +7,17 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView(
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        maxCrossAxisExtent: 180,
-        childAspectRatio: 3 / 2,
+        maxCrossAxisExtent: 150,
+        childAspectRatio: 2.5 / 2,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
       ),
       children: DUMMY_CATEGORIES
           .map(
             (data) => CategoryItem(
-              data.id,
-              data.title,
-              data.color,
+              id: data.id,
+              title: data.title,
+              color: data.color,
             ),
           )
           .toList(),

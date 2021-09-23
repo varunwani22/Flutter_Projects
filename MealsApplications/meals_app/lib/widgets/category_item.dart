@@ -6,7 +6,11 @@ class CategoryItem extends StatelessWidget {
   final String title;
   final Color color;
 
-  CategoryItem(this.id, this.title, this.color);
+  CategoryItem({
+    @required this.id,
+    @required this.title,
+    @required this.color,
+  });
 
   void selectCategory(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(
@@ -31,7 +35,7 @@ class CategoryItem extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         child: Text(
           title,
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.headline6,
         ),
         decoration: BoxDecoration(
           gradient: LinearGradient(
