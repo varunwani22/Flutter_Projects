@@ -8,8 +8,11 @@ class UserProductItem extends StatelessWidget {
   final String title;
   final String imageUrl;
 
-  UserProductItem(
-      {required this.title, required this.imageUrl, required this.id});
+  UserProductItem({
+    required this.id,
+    required this.title,
+    required this.imageUrl,
+  });
 
   @override
   Widget build(BuildContext context) {
