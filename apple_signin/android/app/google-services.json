@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "290974906532",
+    "project_id": "fir-auth-a51b8",
+    "storage_bucket": "fir-auth-a51b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290974906532:android:d044b4ae2728202b55ce31",
+        "android_client_info": {
+          "package_name": "com.perennial.clara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290974906532-uotlccmdbfpbme6fvrh77nu6r85vts8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1-1Ilr3Ez0nen_dZmP6IkRxhy5BZ1KNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290974906532-uotlccmdbfpbme6fvrh77nu6r85vts8t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "290974906532-4g1a43vm9ck5f899khe1rjvn7jper3it.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.perennial.clara"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
